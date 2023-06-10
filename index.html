@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Happy Birthday Stamp</title> 
+        <style> 
+            body{
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center; 
+                background-image: url(https://64.media.tumblr.com/bd6c786943b1da9de06c559a6b997fbe/tumblr_nz14o7t0Z61skcd7fo2_r2_500.gifv); 
+                background-repeat: no-repeat; 
+                background-size: cover;
+            }
+
+            *{
+                font-family:"Luckiest Guy";
+                font-size: 2rem;
+                color: #FF95C5;
+                text-shadow: -5px -5px 0 #3B0000, -1px -1px 0 #3B0000, -1px 1px 0 #3B0000, 1px 1px 0 #3B0000;
+;
+            }
+
+            .Paper{
+                display: grid;
+                grid-template-columns: 1000px;
+                grid-template-rows: 200px auto 200px auto;
+                background-color: #FFF6CD50;
+                height: 800px; 
+                
+            } 
+
+            .happy {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 100%;
+            } 
+
+            .middle {
+                display: flex; 
+                justify-content: center;
+                align-items: center;
+            }
+
+            p{
+                margin: 0px;
+            }
+
+            .name{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                height: 100%; 
+                margin-top: 0px;
+            }
+            .heartposition {
+                display: flex;
+                justify-content: center;
+            }
+
+            .heart{
+                background-color: #FF0000; 
+                height: 15vmin;
+                width: 15vmin;
+                transform: rotate(45deg);
+            }
+            .heart:before {
+                position: absolute;
+                content: ""; 
+                background-color: #FF0000;
+                height: 10vmin;
+                width: 15vmin; 
+                top: -40%; 
+                border-radius: 50% 50% 0 0 ;
+            }
+            .heart:after {
+                position: absolute;
+                content: ""; 
+                background-color: #FF0000;
+                height: 10vmin;
+                width: 15vmin; 
+                transform: rotate(90deg);
+                top: 17%;
+                right: 55%;
+                border-radius: 0 0 50% 50% ;
+            }
+            .click {
+                font-size: 5vmin;
+                position: relative;
+                z-index: 1;
+                transform: rotate(-45deg);
+                bottom: -10%;
+                color: #FFF6CD;
+            } 
+            a{
+                text-decoration: none;
+            }
+
+
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Sarabun:wght@300;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="Paper">
+            <div class="Head">
+                <h1 class="happy">Happy Birthday</h1>
+                
+            </div>
+            <div class="middle">
+                <p>To</p>
+            </div>
+            <div>
+                <h1 class="name">Stamp</h1>
+            </div> 
+            <div class="heartposition">
+                <div class="heart"><a href="https://youtu.be/nl62hhiBMOM"><p class="click">click</p></a>    
+                </div>
+            </div>
+            
+
+        </div>
+    </body>
+</html>
